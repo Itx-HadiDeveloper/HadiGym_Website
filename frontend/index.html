@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HadiGym_Website</title>
+<meta name="description" content="Abdullah Mall Gym — Hyderabad's premium fitness destination in Qasimabad. Weight training, cardio, fat loss, muscle building & personal training for men, women, beginners & bodybuilders. Join now or claim your free trial." />
+<meta name="keywords" content="gym in Hyderabad, gym in Qasimabad, Abdullah Mall Gym, best gym Sindh, fitness club Hyderabad, personal training Hyderabad, weight loss gym, bodybuilding gym Pakistan" />
+<meta name="author" content="M. Karrar Hussain" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.abdullahmallgym.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Abdullah Mall Gym | Transform Your Body. Transform Your Life." />
+<meta property="og:description" content="Premium fitness club at Abdullah Mall, Qasimabad, Hyderabad. Strength training, fat loss, bodybuilding & personal coaching for everyone." />
+<meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" />
+<meta property="og:locale" content="en_PK" />
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' x='5'%3E%F0%9F%8F%8B%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "HadiGym_Website",
+  "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48",
+  "founder": "M. Karrar Hussain",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Abdullah Mall, Qasimabad",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Sindh",
+    "addressCountry": "Pakistan"
+  },
+  "telephone": "+92-300-0000000",
+  "priceRange": "$$"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anton&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          ink: { DEFAULT: '#07070a', 2: '#0d0d11', 3: '#141418' },
+          gold: { DEFAULT: '#c9a227', light: '#e6c866', deep: '#a6821b' },
+          crimson: { DEFAULT: '#8e1b1b', bright: '#b5271f', deep: '#5e1010' },
+          bone: '#f4f2ea',
+        },
+        fontFamily: {
+          display: ['Anton', 'sans-serif'],
+          cond: ['Bebas Neue', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+          mono: ['JetBrains Mono', 'monospace'],
+        },
+      }
+    }
+  }
+</script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased">
+
+<div class="grain"></div>
+
+<!-- LOADER -->
+<div id="loader" class="loader">
+  <div class="flex flex-col items-center gap-4">
+    <div class="spinner"></div>
+    <p class="font-cond text-xl tracking-[0.4em] gold-text">HadiGym_Website</p>
+  </div>
+</div>
+
+<!-- NAV -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+  <nav class="glass mx-auto flex items-center justify-between px-5 md:px-10 py-3 md:py-4">
+    <a href="#home" class="flex items-center gap-2 font-cond text-2xl md:text-3xl tracking-wider">
+      <span class="text-2xl">🏋️</span><span class="gold-text">AMG</span><span class="hidden sm:inline text-[var(--txt)]">| Abdullah Mall Gym</span>
+    </a>
+    <ul class="hidden lg:flex items-center gap-7 font-medium text-sm">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#plans" class="nav-link">Plans</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#trainers" class="nav-link">Trainers</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#bmi" class="nav-link">BMI</a></li>
+      <li><a href="#blog" class="nav-link">Blog</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-3">
+      <button id="theme-toggle" aria-label="Toggle dark / light mode" class="w-9 h-9 rounded-full glass flex items-center justify-center text-lg">🌙</button>
+      <a href="#plans" class="gold-btn hidden md:inline-block px-5 py-2 rounded-full text-sm">Join Now</a>
+      <button id="menu-btn" aria-label="Open menu" class="lg:hidden w-9 h-9 flex flex-col justify-center gap-1.5 items-center">
+        <span class="block w-6 h-0.5 bg-current"></span><span class="block w-6 h-0.5 bg-current"></span><span class="block w-6 h-0.5 bg-current"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- mobile menu -->
+  <div id="mobile-menu" class="lg:hidden hidden glass mx-3 mt-2 rounded-2xl p-6 flex flex-col gap-4 font-medium">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#plans">Plans</a><a href="#services">Services</a>
+    <a href="#trainers">Trainers</a><a href="#gallery">Gallery</a><a href="#testimonials">Testimonials</a>
+    <a href="#bmi">BMI Calculator</a><a href="#faq">FAQ</a><a href="#blog">Blog</a><a href="#contact">Contact</a>
+    <a href="#plans" class="gold-btn text-center px-5 py-2.5 rounded-full mt-2">Join Now</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="relative min-h-screen flex items-center parallax-bg" style="background-image:linear-gradient(180deg,rgba(7,7,10,.55),rgba(7,7,10,.88)),url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80');">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 pt-28 pb-20 w-full grid lg:grid-cols-2 gap-10 items-center">
+    <div class="reveal">
+      <p class="section-eyebrow uppercase mb-4">Qasimabad · Hyderabad · Sindh</p>
+      <h1 class="font-disp text-5xl sm:text-6xl md:text-7xl leading-[0.95] uppercase">
+        Transform Your <span class="gold-text">Body.</span><br/>
+        Transform Your <span class="gold-text">Life.</span>
+      </h1>
+      <p class="mt-6 text-[var(--sub)] text-lg max-w-lg">Hyderabad's most premium strength &amp; conditioning club — built for beginners, women, men and competitive bodybuilders who refuse average.</p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#plans" class="gold-btn px-8 py-3.5 rounded-full font-cond text-lg tracking-wide">Join Now</a>
+        <a href="#contact" class="outline-btn px-8 py-3.5 rounded-full font-cond text-lg tracking-wide">Free Trial</a>
+      </div>
+      <div class="mt-10 flex items-center gap-6 font-mono text-xs text-[var(--sub)]">
+        <div><span class="text-2xl text-[var(--txt)] font-bold block">5★</span>Member Rated</div>
+        <div class="w-px h-10 bg-[var(--line)]"></div>
+        <div><span class="text-2xl text-[var(--txt)] font-bold block">7</span>Days Open</div>
+        <div class="w-px h-10 bg-[var(--line)]"></div>
+        <div><span class="text-2xl text-[var(--txt)] font-bold block">M/F</span>Both Sections</div>
+      </div>
+    </div>
+    <div class="reveal relative hidden lg:block">
+      <div class="glass rounded-3xl p-3 rotate-2">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=80" class="rounded-2xl w-full h-[520px] object-cover" alt="Bodybuilder training at Abdullah Mall Gym Hyderabad"/>
+      </div>
+      <div class="absolute -bottom-6 -left-8 glass rounded-2xl px-6 py-4 -rotate-3">
+        <p class="font-cond text-3xl gold-text">1200+</p>
+        <p class="text-xs text-[var(--sub)] uppercase tracking-widest">Transformations</p>
+      </div>
+    </div>
+  </div>
+  <a href="#stats" aria-label="Scroll down" class="absolute bottom-6 left-1/2 -translate-x-1/2 w-9 h-14 rounded-full border-2 border-[var(--gold)] flex items-start justify-center p-2">
+    <span class="w-1.5 h-1.5 rounded-full bg-[var(--gold)] animate-bounce"></span>
+  </a>
+</section>
+
+<!-- STATS -->
+<section id="stats" class="bg-[var(--bg2)] py-20">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div class="reveal ring-card glass rounded-2xl py-10 border border-transparent">
+      <p class="font-disp text-5xl gold-text counter" data-target="1200">0</p>
+      <p class="mt-2 text-sm uppercase tracking-widest text-[var(--sub)]">Active Members</p>
+    </div>
+    <div class="reveal ring-card glass rounded-2xl py-10 border border-transparent">
+      <p class="font-disp text-5xl gold-text counter" data-target="12">0</p>
+      <p class="mt-2 text-sm uppercase tracking-widest text-[var(--sub)]">Expert Trainers</p>
+    </div>
+    <div class="reveal ring-card glass rounded-2xl py-10 border border-transparent">
+      <p class="font-disp text-5xl gold-text counter" data-target="8">0</p>
+      <p class="mt-2 text-sm uppercase tracking-widest text-[var(--sub)]">Years Running</p>
+    </div>
+    <div class="reveal ring-card glass rounded-2xl py-10 border border-transparent">
+      <p class="font-disp text-5xl gold-text counter" data-target="50">0</p>
+      <p class="mt-2 text-sm uppercase tracking-widest text-[var(--sub)]">Equipment Sets</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="py-24">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="reveal text-center max-w-2xl mx-auto mb-14">
+      <p class="section-eyebrow uppercase">The AMG Difference</p>
+      <h2 class="font-disp text-4xl md:text-5xl mt-3 uppercase">Why Choose Us</h2>
+      <p class="text-[var(--sub)] mt-4">Everything a serious lifter — or a nervous first-timer — needs, under one roof at Abdullah Mall.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal card-tilt glass rounded-2xl p-8">
+        <div class="text-3xl mb-4">🏆</div>
+        <h3 class="font-cond text-2xl tracking-wide">Certified Trainers</h3>
+        <p class="text-[var(--sub)] mt-2 text-sm">Nationally certified coaches guiding every rep, every set.</p>
+      </div>
+      <div class="reveal card-tilt glass rounded-2xl p-8">
+        <div class="text-3xl mb-4">🥗</div>
+        <h3 class="font-cond text-2xl tracking-wide">Nutrition Guidance</h3>
+        <p class="text-[var(--sub)] mt-2 text-sm">Custom diet plans that match your goals, not generic templates.</p>
+      </div>
+      <div class="reveal card-tilt glass rounded-2xl p-8">
+        <div class="text-3xl mb-4">🚻</div>
+        <h3 class="font-cond text-2xl tracking-wide">Separate Women's Section</h3>
+        <p class="text-[var(--sub)] mt-2 text-sm">A private, comfortable space for our female members.</p>
+      </div>
+      <div class="reveal card-tilt glass rounded-2xl p-8">
+        <div class="text-3xl mb-4">🏋️‍♂️</div>
+        <h3 class="font-cond text-2xl tracking-wide">Premium Equipment</h3>
+        <p class="text-[var(--sub)] mt-2 text-sm">Imported machines and free weights, maintained daily.</p>
+      </div>
+      <div class="reveal card-tilt glass rounded-2xl p-8">
+        <div class="text-3xl mb-4">📍</div>
+        <h3 class="font-cond text-2xl tracking-wide">Prime Location</h3>
+        <p class="text-[var(--sub)] mt-2 text-sm">Inside Abdullah Mall, Qasimabad — easy to reach, easy to park.</p>
+      </div>
+      <div class="reveal card-tilt glass rounded-2xl p-8">
+        <div class="text-3xl mb-4">🕒</div>
+        <h3 class="font-cond text-2xl tracking-wide">Flexible Hours</h3>
+        <p class="text-[var(--sub)] mt-2 text-sm">Early morning to late night slots for every schedule.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 bg-[var(--bg2)]">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal order-2 lg:order-1">
+      <p class="section-eyebrow uppercase">Our Story</p>
+      <h2 class="font-disp text-4xl md:text-5xl mt-3 uppercase leading-tight">Built On The Floor Of<br/><span class="gold-text">Abdullah Mall</span></h2>
+      <p class="text-[var(--sub)] mt-6 leading-relaxed">Abdullah Mall Gym began as a single row of dumbbells and a promise: give Qasimabad a fitness space that felt premium, not intimidating. Today it has grown into one of Hyderabad's most trusted training clubs, home to beginners taking their first step and bodybuilders chasing their next competition.</p>
+      <p class="text-[var(--sub)] mt-4 leading-relaxed">Every corner of the gym — from the equipment we import to the trainers we hire — is chosen with one question in mind: will this actually help our members transform?</p>
+
+      <div class="mt-10 glass rounded-2xl p-6 flex items-center gap-5">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=200&q=80" alt="M. Karrar Hussain, owner of Abdullah Mall Gym" class="w-20 h-20 rounded-full object-cover border-2 border-[var(--gold)]"/>
+        <div>
+          <p class="font-cond text-2xl tracking-wide">M. Karrar Hussain</p>
+          <p class="text-xs uppercase tracking-widest text-[var(--gold)]">Founder &amp; Owner</p>
+          <p class="text-[var(--sub)] text-sm mt-1">"I built the gym I always wished existed in my own neighbourhood — no shortcuts, real results."</p>
+        </div>
+      </div>
+    </div>
+    <div class="reveal order-1 lg:order-2 grid grid-cols-2 gap-4">
+      <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=500&q=80" class="rounded-2xl h-64 object-cover w-full mt-8" alt="Gym interior workout floor"/>
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=500&q=80" class="rounded-2xl h-64 object-cover w-full" alt="Weight training equipment"/>
+      <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=500&q=80" class="rounded-2xl h-64 object-cover w-full" alt="Woman strength training"/>
+      <img src="https://images.unsplash.com/photo-1526401485004-46910ecc8e51?auto=format&fit=crop&w=500&q=80" class="rounded-2xl h-64 object-cover w-full mt-8" alt="Personal trainer coaching client"/>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-5 md:px-10 grid md:grid-cols-2 gap-6 mt-20">
+    <div class="reveal card-tilt glass rounded-2xl p-10 border-t-2 border-[var(--gold)]">
+      <h3 class="font-cond text-3xl tracking-wide gold-text">Our Mission</h3>
+      <p class="text-[var(--sub)] mt-4">To make world-class strength training and coaching accessible to every man, woman and beginner in Hyderabad — inside one premium, judgment-free space.</p>
+    </div>
+    <div class="reveal card-tilt glass rounded-2xl p-10 border-t-2 border-[var(--red)]">
+      <h3 class="font-cond text-3xl tracking-wide" style="color:var(--red)">Our Vision</h3>
+      <p class="text-[var(--sub)] mt-4">To become Sindh's most respected fitness brand, known for real transformations, honest coaching and a community that trains like family.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP PLANS -->
+<section id="plans" class="py-24">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="reveal text-center max-w-2xl mx-auto mb-14">
+      <p class="section-eyebrow uppercase">Membership</p>
+      <h2 class="font-disp text-4xl md:text-5xl mt-3 uppercase">Choose Your Plan</h2>
+      <p class="text-[var(--sub)] mt-4">Simple pricing, no hidden charges — cancel or upgrade anytime at the front desk.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal card-tilt glass rounded-2xl p-8 flex flex-col">
+        <h3 class="font-cond text-2xl tracking-wide">Monthly</h3>
+        <p class="mt-4 font-mono"><span class="text-4xl font-bold">Rs 4,000</span><span class="text-[var(--sub)] text-sm">/mo</span></p>
+        <ul class="mt-6 space-y-3 text-sm text-[var(--sub)] flex-1">
+          <li>✔ Full gym access</li><li>✔ Locker facility</li><li>✔ Group classes</li><li>✔ Cancel anytime</li>
+        </ul>
+        <a href="#contact" class="outline-btn mt-8 text-center rounded-full py-3 font-cond tracking-wide">Get Started</a>
+      </div>
+      <div class="reveal card-tilt glass rounded-2xl p-8 flex flex-col">
+        <h3 class="font-cond text-2xl tracking-wide">Quarterly</h3>
+        <p class="mt-4 font-mono"><span class="text-4xl font-bold">Rs 10,500</span><span class="text-[var(--sub)] text-sm">/3mo</span></p>
+        <ul class="mt-6 space-y-3 text-sm text-[var(--sub)] flex-1">
+          <li>✔ Everything in Monthly</li><li>✔ 1 free nutrition session</li><li>✔ Priority equipment access</li>
+        </ul>
+        <a href="#contact" class="outline-btn mt-8 text-center rounded-full py-3 font-cond tracking-wide">Get Started</a>
+      </div>
+      <div class="reveal card-tilt relative glass rounded-2xl p-8 flex flex-col border-2 border-[var(--gold)] scale-[1.03]">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 gold-btn text-xs px-4 py-1 rounded-full font-cond tracking-widest">MOST POPULAR</span>
+        <h3 class="font-cond text-2xl tracking-wide mt-2">Yearly</h3>
+        <p class="mt-4 font-mono"><span class="text-4xl font-bold">Rs 36,000</span><span class="text-[var(--sub)] text-sm">/yr</span></p>
+        <ul class="mt-6 space-y-3 text-sm text-[var(--sub)] flex-1">
+          <li>✔ Everything in Quarterly</li><li>✔ Free diet plan updates</li><li>✔ 2 guest passes/month</li><li>✔ Best value</li>
+        </ul>
+        <a href="#contact" class="gold-btn mt-8 text-center rounded-full py-3 font-cond tracking-wide">Get Started</a>
+      </div>
+      <div class="reveal card-tilt glass rounded-2xl p-8 flex flex-col">
+        <h3 class="font-cond text-2xl tracking-wide">Personal Training</h3>
+        <p class="mt-4 font-mono"><span class="text-4xl font-bold">Rs 12,000</span><span class="text-[var(--sub)] text-sm">/mo</span></p>
+        <ul class="mt-6 space-y-3 text-sm text-[var(--sub)] flex-1">
+          <li>✔ 1-on-1 dedicated coach</li><li>✔ Custom workout &amp; diet</li><li>✔ Progress tracking</li>
+        </ul>
+        <a href="#contact" class="outline-btn mt-8 text-center rounded-full py-3 font-cond tracking-wide">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-24 bg-[var(--bg2)]">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="reveal text-center max-w-2xl mx-auto mb-14">
+      <p class="section-eyebrow uppercase">What We Offer</p>
+      <h2 class="font-disp text-4xl md:text-5xl mt-3 uppercase">Our Services</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal card-tilt glass rounded-2xl p-7"><div class="text-3xl mb-3">🏋️</div><h3 class="font-cond text-xl">Weight Training</h3><p class="text-[var(--sub)] text-sm mt-2">Build raw strength with free weights &amp; machines.</p></div>
+      <div class="reveal card-tilt glass rounded-2xl p-7"><div class="text-3xl mb-3">🏃</div><h3 class="font-cond text-xl">Cardio</h3><p class="text-[var(--sub)] text-sm mt-2">Treadmills, cycles &amp; HIIT for heart &amp; stamina.</p></div>
+      <div class="reveal card-tilt glass rounded-2xl p-7"><div class="text-3xl mb-3">🔥</div><h3 class="font-cond text-xl">Fat Loss</h3><p class="text-[var(--sub)] text-sm mt-2">Structured programs to cut weight sustainably.</p></div>
+      <div class="reveal card-tilt glass rounded-2xl p-7"><div class="text-3xl mb-3">💪</div><h3 class="font-cond text-xl">Muscle Building</h3><p class="text-[var(--sub)] text-sm mt-2">Hypertrophy-focused splits for real size gains.</p></div>
+      <div class="reveal card-tilt glass rounded-2xl p-7"><div class="text-3xl mb-3">🧑‍🏫</div><h3 class="font-cond text-xl">Personal Training</h3><p class="text-[var(--sub)] text-sm mt-2">1-on-1 coaching tailored to your goals.</p></div>
+      <div class="reveal card-tilt glass rounded-2xl p-7"><div class="text-3xl mb-3">🥗</div><h3 class="font-cond text-xl">Nutrition Guidance</h3><p class="text-[var(--sub)] text-sm mt-2">Diet plans built around your lifestyle.</p></div>
+      <div class="reveal card-tilt glass rounded-2xl p-7"><div class="text-3xl mb-3">🤸</div><h3 class="font-cond text-xl">Functional Training</h3><p class="text-[var(--sub)] text-sm mt-2">Mobility &amp; real-world strength work.</p></div>
+      <div class="reveal card-tilt glass rounded-2xl p-7"><div class="text-3xl mb-3">🚻</div><h3 class="font-cond text-xl">Women's Section</h3><p class="text-[var(--sub)] text-sm mt-2">A private, comfortable training zone.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section id="trainers" class="py-24">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="reveal text-center max-w-2xl mx-auto mb-14">
+      <p class="section-eyebrow uppercase">Meet The Team</p>
+      <h2 class="font-disp text-4xl md:text-5xl mt-3 uppercase">Our Trainers</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal card-tilt glass rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover" alt="Head trainer at Abdullah Mall Gym"/>
+        <div class="p-5">
+          <h3 class="font-cond text-xl tracking-wide">Ali Raza</h3>
+          <p class="text-xs text-[var(--gold)] uppercase tracking-widest">Head Strength Coach</p>
+          <p class="text-[var(--sub)] text-sm mt-2">10+ yrs experience · Certified Strength &amp; Conditioning Specialist</p>
+        </div>
+      </div>
+      <div class="reveal card-tilt glass rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover" alt="Female fitness trainer"/>
+        <div class="p-5">
+          <h3 class="font-cond text-xl tracking-wide">Sana Malik</h3>
+          <p class="text-xs text-[var(--gold)] uppercase tracking-widest">Women's Fitness Coach</p>
+          <p class="text-[var(--sub)] text-sm mt-2">6 yrs experience · Certified Personal Trainer, Nutrition Coach</p>
+        </div>
+      </div>
+      <div class="reveal card-tilt glass rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover" alt="Bodybuilding coach"/>
+        <div class="p-5">
+          <h3 class="font-cond text-xl tracking-wide">Hamza Sheikh</h3>
+          <p class="text-xs text-[var(--gold)] uppercase tracking-widest">Bodybuilding Specialist</p>
+          <p class="text-[var(--sub)] text-sm mt-2">8 yrs experience · Regional Bodybuilding Champion &amp; Coach</p>
+        </div>
+      </div>
+      <div class="reveal card-tilt glass rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=500&q=80" class="w-full h-64 object-cover" alt="Functional training coach"/>
+        <div class="p-5">
+          <h3 class="font-cond text-xl tracking-wide">Bilal Ahmed</h3>
+          <p class="text-xs text-[var(--gold)] uppercase tracking-widest">Functional &amp; Weight-Loss Coach</p>
+          <p class="text-[var(--sub)] text-sm mt-2">5 yrs experience · Certified Functional Training Coach</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-24 bg-[var(--bg2)]">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="reveal text-center max-w-2xl mx-auto mb-10">
+      <p class="section-eyebrow uppercase">Inside The Gym</p>
+      <h2 class="font-disp text-4xl md:text-5xl mt-3 uppercase">Gallery</h2>
+    </div>
+    <div class="reveal flex flex-wrap justify-center gap-3 mb-10 font-cond tracking-widest text-sm">
+      <button class="gallery-filter gold-btn px-5 py-2 rounded-full" data-filter="all">All</button>
+      <button class="gallery-filter outline-btn px-5 py-2 rounded-full" data-filter="equipment">Equipment</button>
+      <button class="gallery-filter outline-btn px-5 py-2 rounded-full" data-filter="workout">Workout Area</button>
+      <button class="gallery-filter outline-btn px-5 py-2 rounded-full" data-filter="transformation">Transformations</button>
+    </div>
+    <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="reveal gallery-item rounded-xl overflow-hidden h-56" data-cat="equipment"><img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover" alt="Gym equipment row"/><div class="gallery-overlay absolute inset-0 flex items-end p-3 bg-gradient-to-t from-black/70 text-xs">Equipment Floor</div></div>
+      <div class="reveal gallery-item rounded-xl overflow-hidden h-56" data-cat="workout"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover" alt="Workout area"/><div class="gallery-overlay absolute inset-0 flex items-end p-3 bg-gradient-to-t from-black/70 text-xs">Workout Area</div></div>
+      <div class="reveal gallery-item rounded-xl overflow-hidden h-56" data-cat="equipment"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover" alt="Dumbbell rack"/><div class="gallery-overlay absolute inset-0 flex items-end p-3 bg-gradient-to-t from-black/70 text-xs">Free Weights</div></div>
+      <div class="reveal gallery-item rounded-xl overflow-hidden h-56" data-cat="transformation"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover" alt="Member transformation"/><div class="gallery-overlay absolute inset-0 flex items-end p-3 bg-gradient-to-t from-black/70 text-xs">Member Progress</div></div>
+      <div class="reveal gallery-item rounded-xl overflow-hidden h-56" data-cat="workout"><img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover" alt="Woman training"/><div class="gallery-overlay absolute inset-0 flex items-end p-3 bg-gradient-to-t from-black/70 text-xs">Women's Section</div></div>
+      <div class="reveal gallery-item rounded-xl overflow-hidden h-56" data-cat="equipment"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover" alt="Cable machine"/><div class="gallery-overlay absolute inset-0 flex items-end p-3 bg-gradient-to-t from-black/70 text-xs">Cable Station</div></div>
+      <div class="reveal gallery-item rounded-xl overflow-hidden h-56" data-cat="transformation"><img src="https://images.unsplash.com/photo-1526401485004-46910ecc8e51?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover" alt="Trainer helping client"/><div class="gallery-overlay absolute inset-0 flex items-end p-3 bg-gradient-to-t from-black/70 text-xs">Coaching Session</div></div>
+      <div class="reveal gallery-item rounded-xl overflow-hidden h-56" data-cat="workout"><img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover" alt="Group training"/><div class="gallery-overlay absolute inset-0 flex items-end p-3 bg-gradient-to-t from-black/70 text-xs">Group Session</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-24">
+  <div class="max-w-5xl mx-auto px-5 md:px-10">
+    <div class="reveal text-center mb-14">
+      <p class="section-eyebrow uppercase">Real Results</p>
+      <h2 class="font-disp text-4xl md:text-5xl mt-3 uppercase">Member Stories</h2>
+    </div>
+    <div class="reveal glass rounded-3xl p-8 md:p-12 relative">
+      <div id="testi-track">
+        <div class="testi-slide">
+          <p class="text-lg md:text-xl leading-relaxed">"I lost 14kg in 6 months and finally feel confident. The trainers at Abdullah Mall Gym never let me quit on myself."</p>
+          <div class="mt-6 flex items-center gap-4">
+            <img src="https://images.unsplash.com/photo-1489980300086-1a9e9d02d1a4?auto=format&fit=crop&w=100&q=80" class="w-14 h-14 rounded-full object-cover" alt="Testimonial member Ayesha"/>
+            <div><p class="font-cond text-xl">Ayesha Khan</p><p class="text-xs text-[var(--gold)] uppercase tracking-widest">Weight Loss · -14kg in 6 months</p></div>
+          </div>
+        </div>
+        <div class="testi-slide hidden">
+          <p class="text-lg md:text-xl leading-relaxed">"Best gym in Qasimabad, hands down. Went from a skinny beginner to competing in my first local bodybuilding show."</p>
+          <div class="mt-6 flex items-center gap-4">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" class="w-14 h-14 rounded-full object-cover" alt="Testimonial member Zeeshan"/>
+            <div><p class="font-cond text-xl">Zeeshan Ali</p><p class="text-xs text-[var(--gold)] uppercase tracking-widest">Muscle Gain · +9kg lean mass</p></div>
+          </div>
+        </div>
+        <div class="testi-slide hidden">
+          <p class="text-lg md:text-xl leading-relaxed">"As a mother of two, I never thought I'd enjoy the gym. The women's section changed that completely."</p>
+          <div class="mt-6 flex items-center gap-4">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" class="w-14 h-14 rounded-full object-cover" alt="Testimonial member Fatima"/>
+            <div><p class="font-cond text-xl">Fatima Rehman</p><p class="text-xs text-[var(--gold)] uppercase tracking-widest">Fitness Enthusiast</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center gap-3 mt-8">
+        <button id="testi-prev" class="outline-btn w-10 h-10 rounded-full">‹</button>
+        <button id="testi-next" class="outline-btn w-10 h-10 rounded-full">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BMI CALCULATOR -->
+<section id="bmi" class="py-24 bg-[var(--bg2)]">
+  <div class="max-w-5xl mx-auto px-5 md:px-10">
+    <div class="reveal text-center max-w-2xl mx-auto mb-14">
+      <p class="section-eyebrow uppercase">Know Your Numbers</p>
+      <h2 class="font-disp text-4xl md:text-5xl mt-3 uppercase">BMI Calculator</h2>
+    </div>
+    <div class="reveal glass rounded-3xl p-8 md:p-12 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <label class="text-sm text-[var(--sub)]">Height (cm)</label>
+        <input id="bmi-height" type="number" placeholder="e.g. 170" class="w-full mt-2 mb-6 bg-transparent border border-[var(--line)] rounded-xl px-4 py-3 outline-none focus:border-[var(--gold)]"/>
+        <label class="text-sm text-[var(--sub)]">Weight (kg)</label>
+        <input id="bmi-weight" type="number" placeholder="e.g. 70" class="w-full mt-2 mb-6 bg-transparent border border-[var(--line)] rounded-xl px-4 py-3 outline-none focus:border-[var(--gold)]"/>
+        <button id="bmi-calc" class="gold-btn w-full py-3 rounded-full font-cond text-lg tracking-wide">Calculate BMI</button>
+      </div>
+      <div class="text-center">
+        <div class="relative w-44 h-44 mx-auto">
+          <svg class="w-full h-full -rotate-90" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="52" stroke="var(--line)" stroke-width="10" fill="none"/>
+            <circle id="bmi-ring" cx="60" cy="60" r="52" stroke="url(#g)" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="326.7"/>
+            <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="var(--gold)"/><stop offset="100%" stop-color="var(--red)"/></linearGradient></defs>
+          </svg>
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <span id="bmi-value" class="font-disp text-3xl">--</span>
+            <span id="bmi-category" class="text-xs text-[var(--sub)] mt-1 uppercase tracking-widest">Enter details</span>
+          </div>
+        </div>
+        <ul id="bmi-tips" class="mt-8 text-sm text-[var(--sub)] space-y-2 text-left max-w-xs mx-auto">
+          <li>💧 Drink at least 3L of water daily.</li>
+          <li>🍗 Prioritize protein with every meal.</li>
+          <li>🛌 Sleep 7–8 hours for real recovery.</li>
+          <li>🏋️ Train 4–5x per week consistently.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-24">
+  <div class="max-w-3xl mx-auto px-5 md:px-10">
+    <div class="reveal text-center mb-14">
+      <p class="section-eyebrow uppercase">Questions</p>
+      <h2 class="font-disp text-4xl md:text-5xl mt-3 uppercase">FAQs</h2>
+    </div>
+    <div class="space-y-4">
+      <div class="reveal glass rounded-2xl overflow-hidden faq-item">
+        <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center font-cond text-lg tracking-wide">Do you have a separate section for women? <span class="text-[var(--gold)]">+</span></button>
+        <div class="faq-panel px-6 text-[var(--sub)] text-sm"><p class="pb-5">Yes, Abdullah Mall Gym has a dedicated, private women's training section with female staff support.</p></div>
+      </div>
+      <div class="reveal glass rounded-2xl overflow-hidden faq-item">
+        <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center font-cond text-lg tracking-wide">Is a free trial really free? <span class="text-[var(--gold)]">+</span></button>
+        <div class="faq-panel px-6 text-[var(--sub)] text-sm"><p class="pb-5">Yes — book a free trial session through our contact form or WhatsApp with zero commitment.</p></div>
+      </div>
+      <div class="reveal glass rounded-2xl overflow-hidden faq-item">
+        <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center font-cond text-lg tracking-wide">Do you offer diet plans? <span class="text-[var(--gold)]">+</span></button>
+        <div class="faq-panel px-6 text-[var(--sub)] text-sm"><p class="pb-5">Yes, our nutrition coaches build a plan around your goals, whether it's fat loss or muscle gain.</p></div>
+      </div>
+      <div class="reveal glass rounded-2xl overflow-hidden faq-item">
+        <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center font-cond text-lg tracking-wide">What are your gym timings? <span class="text-[var(--gold)]">+</span></button>
+        <div class="faq-panel px-6 text-[var(--sub)] text-sm"><p class="pb-5">We're open 6 AM – 11 PM, seven days a week, including public holidays.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="py-24 bg-[var(--bg2)]">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="reveal text-center max-w-2xl mx-auto mb-14">
+      <p class="section-eyebrow uppercase">Fitness Blog</p>
+      <h2 class="font-disp text-4xl md:text-5xl mt-3 uppercase">From The Blog</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="reveal card-tilt glass rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover" alt="Beginner gym guide blog cover"/>
+        <div class="p-6"><p class="text-xs text-[var(--gold)] uppercase tracking-widest">Beginners</p><h3 class="font-cond text-xl mt-2">Your First 30 Days At The Gym</h3><p class="text-[var(--sub)] text-sm mt-2">A simple roadmap for total beginners walking in for the first time.</p></div>
+      </article>
+      <article class="reveal card-tilt glass rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover" alt="Fat loss nutrition blog cover"/>
+        <div class="p-6"><p class="text-xs text-[var(--gold)] uppercase tracking-widest">Nutrition</p><h3 class="font-cond text-xl mt-2">5 Diet Myths Slowing Your Fat Loss</h3><p class="text-[var(--sub)] text-sm mt-2">Our nutrition coach breaks down what's actually holding you back.</p></div>
+      </article>
+      <article class="reveal card-tilt glass rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=500&q=80" class="w-full h-48 object-cover" alt="Muscle building blog cover"/>
+        <div class="p-6"><p class="text-xs text-[var(--gold)] uppercase tracking-widest">Muscle</p><h3 class="font-cond text-xl mt-2">Progressive Overload, Explained</h3><p class="text-[var(--sub)] text-sm mt-2">The one principle behind every serious muscle gain success story.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="py-16">
+  <div class="max-w-4xl mx-auto px-5 md:px-10">
+    <div class="reveal glass rounded-3xl p-10 text-center clip-diag">
+      <h3 class="font-disp text-3xl uppercase">Get Fitness Tips In Your Inbox</h3>
+      <p class="text-[var(--sub)] mt-2">Weekly workout &amp; nutrition tips from the AMG coaching team. No spam.</p>
+      <form id="newsletter-form" class="mt-6 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <input required type="email" placeholder="you@example.com" class="flex-1 bg-transparent border border-[var(--line)] rounded-full px-5 py-3 outline-none focus:border-[var(--gold)]"/>
+        <button class="gold-btn px-6 py-3 rounded-full font-cond tracking-wide whitespace-nowrap">Subscribe</button>
+      </form>
+      <p id="newsletter-msg" class="text-sm text-[var(--gold)] mt-3 hidden">Thanks for subscribing! 🎉</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-[var(--bg2)]">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="reveal text-center max-w-2xl mx-auto mb-14">
+      <p class="section-eyebrow uppercase">Get In Touch</p>
+      <h2 class="font-disp text-4xl md:text-5xl mt-3 uppercase">Contact Us</h2>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-10">
+      <div class="reveal space-y-6">
+        <div class="glass rounded-2xl overflow-hidden h-72">
+          <iframe title="Abdullah Mall Gym location map" src="https://www.google.com/maps?q=Abdullah+Mall,+Qasimabad,+Hyderabad,+Sindh,+Pakistan&output=embed" width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="glass rounded-2xl p-6 space-y-4 text-sm">
+          <p>📍 <strong>Address:</strong> Abdullah Mall, Qasimabad, Hyderabad, Sindh, Pakistan</p>
+          <p>📞 <strong>Phone:</strong> <a href="tel:+923000000000" class="hover:text-[var(--gold)]">+92 300 0000000</a></p>
+          <p>✉️ <strong>Email:</strong> <a href="mailto:info@abdullahmallgym.com" class="hover:text-[var(--gold)]">info@abdullahmallgym.com</a></p>
+          <a href="https://wa.me/923000000000" target="_blank" rel="noopener" class="inline-flex items-center gap-2 gold-btn px-5 py-2.5 rounded-full font-cond tracking-wide">💬 Chat on WhatsApp</a>
+        </div>
+      </div>
+      <form id="contact-form" class="reveal glass rounded-2xl p-8 space-y-5">
+        <h3 class="font-cond text-2xl tracking-wide">Book Your Free Trial</h3>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input required placeholder="Full Name" class="bg-transparent border border-[var(--line)] rounded-xl px-4 py-3 outline-none focus:border-[var(--gold)]"/>
+          <input required type="tel" placeholder="Phone Number" class="bg-transparent border border-[var(--line)] rounded-xl px-4 py-3 outline-none focus:border-[var(--gold)]"/>
+        </div>
+        <input required type="email" placeholder="Email Address" class="w-full bg-transparent border border-[var(--line)] rounded-xl px-4 py-3 outline-none focus:border-[var(--gold)]"/>
+        <select class="w-full bg-[var(--bg2)] border border-[var(--line)] rounded-xl px-4 py-3 outline-none focus:border-[var(--gold)]">
+          <option>Interested in: Monthly Plan</option>
+          <option>Interested in: Quarterly Plan</option>
+          <option>Interested in: Yearly Plan</option>
+          <option>Interested in: Personal Training</option>
+        </select>
+        <textarea rows="4" placeholder="Your Message" class="w-full bg-transparent border border-[var(--line)] rounded-xl px-4 py-3 outline-none focus:border-[var(--gold)]"></textarea>
+        <button class="gold-btn w-full py-3.5 rounded-full font-cond text-lg tracking-wide">Send Message</button>
+        <p id="contact-msg" class="text-sm text-[var(--gold)] hidden">Message sent! We'll contact you shortly. ✅</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="pt-20 pb-8 bg-[var(--bg)] border-t border-[var(--line)]">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 grid md:grid-cols-4 gap-10">
+    <div>
+      <p class="font-cond text-2xl tracking-wider gold-text">HadiGym_Website</p>
+      <p class="text-[var(--sub)] text-sm mt-3">Premium fitness club at Abdullah Mall, Qasimabad, Hyderabad — founded by M. Karrar Hussain.</p>
+      <div class="flex gap-3 mt-5">
+        <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full glass flex items-center justify-center">📘</a>
+        <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full glass flex items-center justify-center">📸</a>
+        <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-full glass flex items-center justify-center">▶️</a>
+        <a href="https://wa.me/923000000000" aria-label="WhatsApp" class="w-9 h-9 rounded-full glass flex items-center justify-center">💬</a>
+      </div>
+    </div>
+    <div>
+      <p class="font-cond text-lg tracking-wide mb-4">Quick Links</p>
+      <ul class="space-y-2 text-sm text-[var(--sub)]">
+        <li><a href="#about" class="hover:text-[var(--gold)]">About Us</a></li>
+        <li><a href="#plans" class="hover:text-[var(--gold)]">Membership Plans</a></li>
+        <li><a href="#services" class="hover:text-[var(--gold)]">Services</a></li>
+        <li><a href="#trainers" class="hover:text-[var(--gold)]">Trainers</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-cond text-lg tracking-wide mb-4">More</p>
+      <ul class="space-y-2 text-sm text-[var(--sub)]">
+        <li><a href="#gallery" class="hover:text-[var(--gold)]">Gallery</a></li>
+        <li><a href="#bmi" class="hover:text-[var(--gold)]">BMI Calculator</a></li>
+        <li><a href="#faq" class="hover:text-[var(--gold)]">FAQs</a></li>
+        <li><a href="#blog" class="hover:text-[var(--gold)]">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-cond text-lg tracking-wide mb-4">Contact</p>
+      <ul class="space-y-2 text-sm text-[var(--sub)]">
+        <li>Abdullah Mall, Qasimabad, Hyderabad</li>
+        <li>+92 300 0000000</li>
+        <li>info@abdullahmallgym.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center text-xs text-[var(--sub)] mt-14">© <span id="year"></span> Abdullah Mall Gym. All rights reserved. Founded by M. Karrar Hussain.</div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/923000000000" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="fab fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center text-2xl">💬</a>
+<button id="scroll-top" aria-label="Scroll to top" class="fab fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full gold-btn hidden">↑</button>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
